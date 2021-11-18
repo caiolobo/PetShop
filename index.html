@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="_css/pg.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <title>::PetShop Amor de Pet::</title>
+</head>
+
+<body>
+
+    <!-- Parte de cima do site -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav"> 
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="_imagens/AmordePet Logo.jpeg" class="logo"> <!-- criação da classe logo -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">  <!-- alteração da posição dos nomes -->
+                <!-- a seguir, seguindo a hierarquia navbarNav ul li a, fazer alterações nos textos -->
+                <ul class="navbar-nav">
+                    <!--<li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Pets</a>
+                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blocos">Promoções</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cadastro">Cadastrar Pet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contatos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Redes Sociais</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Apenas os banners -->
+    <section id="banner"> 
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="2000">
+                <img src="_imagens/banners/banner4.png" id="imgBanner" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-interval="2000">
+                <img src="_imagens/banners/banner2.png" id="imgBanner" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-interval="2000">
+                <img src="_imagens/banners/banner3.png" id="imgBanner" class="d-block w-100" alt="...">
+              </div>
+            
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <!-- Promoções, pets, cadastro, contato, RS -->
+    <section id="blocos"> 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="main-title">Promoções</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 center align-middle destaque-texto">
+                    Golden Special
+                    <img src="_imagens/produtos/img1.jpg">
+                    <br>De R$ 47,29<br>Por R$ 32,29
+                </div>
+                <div class="col-2 center align-middle destaque-texto">
+                    Premier
+                    <img src="_imagens/produtos/img2.jpg">
+                    <br>De R$ 35,00<br>Por R$ 22,15
+                </div>
+                <div class="col-2 center align-middle destaque-texto">
+                    Nutrilus PRO
+                    <img src="_imagens/produtos/img3.jpg">
+                    <br>De R$ 55,00<br>Por R$ 42,50
+                </div>
+                <div class="col-2 center align-middle destaque-texto">
+                    Purina FRIKIES
+                    <img src="_imagens/produtos/img4.jpg">
+                    <br>De R$ 4,29<br>Por R$ 2,29
+                </div>
+                <div class="col-2 center align-middle destaque-texto">
+                    Whiskas Atum
+                    <img src="_imagens/produtos/img5.jpg">
+                    <br>De R$ 4,29<br>Por R$ 3,79
+                </div>
+                <div class="col-2 center align-middle destaque-texto">
+                    Whiskas Frango
+                    <img src="_imagens/produtos/img6.jpg">
+                    <br>De R$ 4,29<br>Por R$ 3,79
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Cadastro Pet -->
+    <section id="cadastro"> 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="main-title">Cadastro do Pet</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid col-md-6">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-12">
+                    <label for="inputEmail" class="form-label">
+                        E-mail do Responsável </label>
+                    <input type="Email" class="form-control" id="inputEmail" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="inputNomeTitular" class="form-label">Nome do Responsável</label>
+                    <input type="name" name="NomeTitular" class="form-control" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="inputNomePet" class="form-label">Nome do Pet</label>
+                    <input type="namePet" name="NomePet" class="form-control" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="idadePet" class="form-label">Idade do Pet</label>
+                    <input type="agePet" name="idadePet" class="form-control" required>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sexo
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Feminino</a></li>
+                      <li><a class="dropdown-item" href="#">Masculino</a></li>
+                    </ul>
+                  </div>
+                      <div>
+                      <div class="submit">
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                      </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                      <label class="form-check-label" for="inlineFormCheck">
+                        Salvar Cadastro
+                      </label>
+                    </div>
+                  </div>
+
+                
+            </form>
+        </div>
+
+    </section>
+
+    <!-- contato -->
+    <section id="contato">
+        <div class="container-fluid">          
+          <div class="row">
+            <div class="col-12">
+              <h3 class="main-title">Contato</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid col-md-6">
+          <form class="row g-3 needs-validation" novalidate>
+              <div class="col-md-12">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" required>
+              </div>
+
+              <div class="col-md-12">
+                <label for="inputEmail4" class="form-label">CEP</label>
+                <input name="cep" type="text" class="form-control" required  id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" >
+              </div>
+
+              <div class="col-md-12">
+                <label for="inputEmail4" class="form-label">Rua</label>
+                <input name="rua" type="text" class="form-control" required disabled id="rua" size="60" />
+              </div>
+
+              <div class="col-md-12">
+                <label for="inputEmail4" class="form-label">Bairro</label>
+                <input name="bairro" type="text" class="form-control" required disabled id="bairro" size="60" />
+              </div>
+
+              <div class="col-md-12">
+                <label for="inputEmail4" class="form-label">Cidade</label>
+                <input name="cidade" type="text" class="form-control" required disabled id="cidade" size="60" />
+              </div>
+
+              <div class="col-md-12">
+                <label for="inputEmail4" class="form-label">UF</label>
+                <input name="cidade" type="text" class="form-control" required disabled id="uf" size="60" />
+              </div>
+
+              <div class="col-md-12">
+                <label for="inputPassword4" class="form-label">Fale Conosco</label>
+                <textarea class="form-control" name="faleconosco"></textarea>
+              </div>
+
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- rodapé do site -->
+    <section id="footer"> 
+        <footer>
+            <div class="container-fluid">
+                <div class="row align-self-center">
+                    <div class="col-sm-3 text-center align-self-center" id="redeSocial">
+                        Redes Sociais<br>
+                        <i class="fab fa-facebook-f icones"></i>
+                        <i class="fab fa-twitter icones"></i>
+                        <i class="fab fa-instagram icones"></i>
+                </div>
+                    <div class="col-sm-3 text-center align-self-center" id="endereço">
+                        <i class="fas fa-map-marker-alt iconesWhats"></i>
+                        Rua das Gaivotas<br>CEP: 41720-015<br>Imbuí, <br>Salvador - BA
+                </div>
+                <div class="col-sm-3 text-center align-self-center" id="contato">
+                    Contatos: <br>
+                    <i class="fab fa-whatsapp iconesWhats"></i>
+                    (71) 2132-2877<br>
+                    <i class="far fa-envelope"></i>
+                    amordepet@redepetshop.com.br  
+            </div>
+            
+            <div class="col-sm-3 text-center align-self-center">
+                <img src="_imagens/logo.png" class="logo_footer">
+            </div>
+            </div>
+        </footer>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
+<script src="JS/pg.js"></script>
+<script src="JS/cep.js"></script>

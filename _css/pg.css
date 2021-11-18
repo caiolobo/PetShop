@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+/*CABEÇA DO SITE*/
+.navbar-brand .logo{
+    width: 170px;
+}
+#nav{
+background: linear-gradient(90deg, rgba(255,255,255,1) 15%, rgba(233,145,193,1) 100%);
+box-shadow: 7px 8px 2px -3px #EDA2CB;
+margin-bottom: 10px;
+}
+#navbarNav ul li a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+}
+#navbarNav ul li a:hover{
+    color: #000;
+    background: #c15c93;
+}
+/*CORPO DO SITE*/
+/*Banner*/
+#banner{
+    margin-bottom: 40px;
+}
+/*Promoções*/
+.main-title{
+    color: #000;
+    text-align: center;
+    margin: 40px 0 40px 0;
+    font-size: 40px;
+}
+.main-title::after{
+    content: "";
+    border-bottom: 4px solid #c15c93 ;
+    position: absolute;
+    width: 100%;
+    left: 0%;
+}
+#blocos{
+    margin-bottom: 80px;
+}
+.destaque{
+    font-size: 18px;
+
+}
+.destaque-texto{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #838283
+}
+.destaque-texto:hover{
+    color: #000;
+}
+.icones{
+    width: 40px;
+    font-size: 40px;
+    margin-top: 10px;
+}
+.iconesWhats{
+    font-size: 20px;
+}
+.container-fluid{
+    margin-bottom: 30px;
+    font-weight: bold ;
+}
+.submit{
+    margin-top: 15px;
+}
+.dropdown-item{
+    color: #EDA2CB;
+}
+/*RODAPÉ DO SITE*/
+#contato{
+    margin-bottom: 15px;
+}
+#footer{
+    background: linear-gradient(90deg, rgba(233,145,193,1) 51%, rgba(255,255,255,1) 100%);
+}
+#endereço{
+    margin-top: 5px ;
+}
+
+.logo_footer{
+    width: 170px;
+}
+
